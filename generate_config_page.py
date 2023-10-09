@@ -110,7 +110,7 @@ def group_properties_by_table(data):
 
 if __name__ == '__main__':
     sys. setrecursionlimit(10000)
-    input_yaml_file = input("Enter the path to the YAML file: ")
+    input_yaml_file = input("Enter the path to CE or PE YAML file: ")
     with open(input_yaml_file) as f:
         if 'ThingsBoard, Inc. ("COMPANY") CONFIDENTIAL' in f.read():
             output_md_file = "_includes/docs/user-guide/install/pe-config-tables.md"
